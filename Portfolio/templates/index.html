@@ -1,0 +1,269 @@
+  <html>
+<head lang='en'>
+
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top:70px;
+  margin-left:0px;
+  }
+
+h3, h4, h5, h6 {
+  color: #808080;
+  font-weight:bold;
+  font-size:1.25rem;
+}
+h2{
+font-size:1.25rem;
+color:#808080;
+font-weight:bold;
+}
+.title{
+    font-family: "Times New Roman", Times, serif;
+    font-size:1.5rem;
+    font-style:bold;
+}
+.About{
+font-family:"Arial", Helvetica, sans-serif;
+font-style:italic;
+}
+
+.bg-steel {
+  background-color: #004d99;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  positon:absolute;
+  padding: 10px 20px;
+  border-radius:25px;
+  margin-top:65px;
+  transition:0.3s;
+  border:10px;    
+}
+
+.skill-section {
+  positon:absolute;
+  padding: 10px 20px;
+  border-radius:25px;
+  margin-top:30px;
+  transition:0.3s;
+  border:none;    
+}
+.skill-section:hover{
+    box-shadow: 0 3px 3px rgba(11, 84, 197,0.5);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-10px);
+}
+.skill-section ul{
+
+position:relative;
+}
+.skill-section ul li{
+list-style:none;
+padding:6px;
+}
+.skill-subsection{
+  positon:absolute;
+  padding: 10px 20px;
+  border-radius:25px;
+  margin-top:30px;
+  transition:0.5s;
+  border:none; 
+}
+.skill-subsection:hover{
+    box-shadow: 0 3px 3px rgba(11, 84, 197,0.5);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-10px);
+}
+.profile-img{
+     border-radius:25%;
+}
+.contact ul{
+     display:flex;
+     position:absolute;
+     transform: translate(-50%,-50%);
+     margin-top:8px;
+     margin-left:50px;
+           
+}
+.contact ul li{
+list-style:none;
+margin:6px;
+}
+
+.fa.fa-google-plus{
+    color: #ea4158;
+    font-size:22px; 
+}
+.button-id.fa{
+line-height:50px;
+}
+.fa.fa-whatsapp{
+font-size:22px;
+color:#05CC2B;
+}
+.fa.fa-linkedin{
+font-size:22px;
+color:#2998EB;
+}
+.fa.fa-star{
+color:#0B54C5;
+}
+.button-id{
+display:inline-block;
+text-decoration: none;
+width:40px;
+height:40px;
+line-height: 50px;
+border-radius:50px;
+text-align: center;
+vertical-align: middle;
+overflow:hidden;
+font-weight: bold;
+text-shadow:1px 1px 1px rgba(0, 0, 0,0.4);
+box-shadow: 0 1px 1px rgba(11, 84, 197, 0.4);
+transition: .3s;
+border:none;
+}
+.button-id:hover{
+    box-shadow: 0 3px 3px rgba(11, 84, 197,0.4);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.Projects{
+  positon:absolute;
+  padding: 10px 20px;
+  border-radius:25px;
+  margin-top:5px;   
+}
+.Projects ol li{
+list-style-type:circle;
+}
+</style>
+   
+
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">Portfolio</a>
+        <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="{{url_for('static',filename='image/Sourabh_Mehta_DS.pdf')}}" download>Download</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8"> 
+
+<!-- Basic Details -->    
+<image class="profile-img" src="{{url_for('static',filename='image/profile1.jpg')}}" alt="Sourabh Mehta"  width="180" height="180" quality="100" mode='fit'/>
+<h1>Sourabh Mehta</h1>
+    <p class="title">Data Scientist</p>
+     <div class="contact">
+      <ul>   
+        <li><a class="id" href="mailto: sourabhmehta06@gmail.com" target="_blank">
+          <button class="button-id"><i class="fa fa-google-plus" ></button></i>        
+            </a></li>   
+         <li><a class="mobile-no" href="https://wa.me/+919110904883?">
+            <button class="button-id"><i class="fa fa-whatsapp" ></button></i>
+              </a></li> 
+          <li><a class="linkedin" href="https://www.linkedin.com/in/sourabh-mehta-667959174">
+               <button class="button-id"><i class="fa fa-linkedin"></button></i>
+                 </a></li>
+          </ul>
+          </div>
+
+<!-- About -->          
+        <div class="content-section">
+        <h2>About</h2>
+        <p class="About">I graduated in Electronics & Communication Engineering from Guru Nanak Dev Engineering College (2015-2019). My college helped me to learn management skills and from there I developed an interest in data and analytics. I completed my PG Diploma in Data Science & Engineering from Great Lakes Institute of Management (2019-2020), during my studies worked on certain projects to gain some experience in  Python, MySQL, Data processing, ML algorithms also worked on Tableau for some analytics.
+          </p>
+        </div>
+
+<!-- Projects -->
+       <div class="Projects">
+       <h4>Projects</h4>
+       <ol>
+        <li><b>IBM HR Analytics Employee Attrition & Performance</b> <p>This dataset consists of 1470 employees details which consist of 35 features out of which 18 features were continuous and 17 features were categorical. The cost function/target variable is attrition. Drained some conclusion from an analysis of data that some features were affecting the attrition a lot such as monthly income, over time, marital status, etc. Attrition contains binary data, so build a classification model, used logistic regression as baseline model and final model as KNN.</p></li>
+        <li><b>Rossmann Store Sales</b> <p>Data related to Rossmann stores and their customers which contains 10lakhs entries and 18 features.So the main aim was to predict sales of every Rossmann stores across the country, applied certain machine learning algorithms(Regressor) to build a predictive model to predict sales, found Decision Tree Regressor as best.</p></li>
+        <li><b>Indian lever patients analysis</b> <p>This dataset consists of 582 patients/observations with 11 features providing details about patients. There are 9 continuous features and 2 categorical features including the target/cost function which is whether the patient is suffering from liver disease or not. Analysis related to the target variable was done to know the relationship between the dependent variable and the independent variable. As it is a classification so build a KNN using 6 number of nearest neighbors model to classify.</p></li>    
+         </ol>
+        </div>        
+
+
+</div>
+
+
+<!-- Col2 -->
+        <div class="col-sm-4">
+
+<!-- Skill section -->
+        <div class="skill-section"> 
+          <h3>Skills <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></h3>
+           <ul>
+            <li class="skill-subsection">Python <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+            <li class="skill-subsection">MySQL <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+            <li class="skill-subsection">Statsitics <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+            <li class="skill-subsection">Exploraty Data Analysis <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+            <li class="skill-subsection">Machine Learning <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+
+           </ul>
+          </div>      
+
+<!-- Education -->         
+         <div class="skill-section">
+         <h4>Education</h4>
+         <div class="skill-subsection">
+         <p style="font-size:100%; font-weight:bold;">Data Science & Engineering</p>
+         <p style="font-size:70%">Great Lakes Institute of Management(2019-2020)</p>
+          </div>
+         <div class="skill-subsection">
+         <p style="font-size:100%; font-weight:bold;">Electronics & Communication Engineering</p>
+         <p style="font-size:70%">Guru Nanak Dev Engineering College(2015-2019)</p>
+          </div>
+         </div>
+        
+
+
+        </div>
+       </div>
+      </div>
+    </main>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>  
